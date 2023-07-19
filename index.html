@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
+        <div class="loader">
+        <div class="loader__container"></div>
+            <div class="dot d1"></div>
+            <div class="dot d2"></div>
+            <div class="dot d3"></div>
+        </div>
         <div class="main-container">
             <header class="header">
                 <h1 class="header__logo">ohmyfood</h1>
@@ -64,7 +70,7 @@
                     <h2 class="section__title">Restaurants</h2>
                     <div class="restaurants-card">
                         <a href="la_palette_du_gout.html">
-                            <article class="card">                               
+                            <article class="card">
                                 <div class="nouveau_restaurant">
                                     <p class="nouveau">Nouveau</p>
                                     <img
@@ -72,7 +78,13 @@
                                         alt="Image Plat"
                                     />
                                 </div>
-                                <h3 class="card-title">La palette du goût<i class="fa-regular fa-heart fa-2xl"></i></h3>
+                                <h3 class="card-title">
+                                    La palette du goût
+                                    <div class="heart">
+                                        <i class="fa-regular fa-heart heart-empty"></i
+                                        ><i class="fa-solid fa-heart heart-full"></i>
+                                    </div>
+                                </h3>
                                 <p class="card-subtitle">Ménilmontant</p>
                             </article></a
                         >
@@ -86,7 +98,13 @@
                                         alt="Image Plat"
                                     />
                                 </div>
-                                <h3 class="card-title">La note enchantée</h3>
+                                <h3 class="card-title">
+                                    La note enchantée
+                                    <div class="heart">
+                                        <i class="fa-regular fa-heart heart-empty"></i
+                                        ><i class="fa-solid fa-heart heart-full"></i>
+                                    </div>
+                                </h3>
                                 <p class="card-subtitle">Charonne</p>
                             </article></a
                         >
@@ -97,7 +115,13 @@
                                     src="Images+et+textes+Ohmyfood\Images et textes Ohmyfood\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="Image Plat"
                                 />
-                                <h3 class="card-title">À la française</h3>
+                                <h3 class="card-title">
+                                    À la française
+                                    <div class="heart">
+                                        <i class="fa-regular fa-heart heart-empty"></i
+                                        ><i class="fa-solid fa-heart heart-full"></i>
+                                    </div>
+                                </h3>
                                 <p class="card-subtitle">Cité Rouge</p>
                             </article></a
                         >
@@ -108,7 +132,13 @@
                                     src="Images+et+textes+Ohmyfood\Images et textes Ohmyfood\images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                     alt="Image Plat"
                                 />
-                                <h3 class="card-title">Le délice des sens</h3>
+                                <h3 class="card-title">
+                                    Le délice des sens
+                                    <div class="heart">
+                                        <i class="fa-regular fa-heart heart-empty"></i
+                                        ><i class="fa-solid fa-heart heart-full"></i>
+                                    </div>
+                                </h3>
                                 <p class="card-subtitle last">Folie-Méricourt</p>
                             </article></a
                         >
@@ -126,8 +156,9 @@
                     <p class="footer-links"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
                 </li>
                 <li><p class="footer-links">Mentions légales</p></li>
-                <li><p class="footer-links">Contact</p></li>
+                <li><p class="footer-links"><a href="mailto:ohmyfood@mail.fr">Contact</a></p></li>
             </ul>
         </footer>
+       
     </body>
 </html>
