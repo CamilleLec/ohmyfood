@@ -19,6 +19,7 @@ img {
     object-fit: cover;
 }
 
+
 .fa-solid.fa-mobile-screen-button {
     margin-right: 15px;
     color: #7e7e7e;
@@ -107,7 +108,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     width: 90%;
-    padding: 30px;
+    padding: 30px 30px 30px 0;
     margin: 20px 0;
     border-radius: 20px;
     border: none;
@@ -124,16 +125,13 @@ img {
     height: 2rem;
     border-radius: 50%;
     position: relative;
-    left: -45px;
+    left: -17px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.wrapper {
-    position: relative;
-    left: -25px;
-}
+.process__step{padding-left: 7%;}
 
 /************** RESTAURANTS ****************/
 
@@ -160,6 +158,7 @@ img {
 .card {
     width: 92%;
     margin: auto;
+    margin-bottom: 20px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -172,21 +171,31 @@ img {
 }
 
 .card-title {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 13px;
-    margin-bottom: 0px;
-    padding-right: 30px;
+    margin: 0px;
+    padding-bottom: 5px ;
 }
+
+.card-subtitle {
+    margin: 0px;
+}
+
+.card_footer {
+    padding: 15px;
+    margin-top: -5px;
+}
+
+/* ************ HEART **************/
 
 .heart {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5px;
 }
 
-.fa-heart {   
+.fa-heart {
     position: absolute;
-    right: 1px;
-    top: 5px;
     font-size: 30px;
 }
 
@@ -201,12 +210,6 @@ img {
     -webkit-background-clip: text;
     color: transparent;
 }
-
-.card-subtitle {
-    padding: 0 0 15px 13px;
-    margin-top: 5px;
-}
-
 
 /************** FOOTER *****************/
 
@@ -239,7 +242,6 @@ img {
 .card-subtitle.last {
     margin-bottom: 0px;
 }
-
 
 /***************** LOADER ********************/
 
@@ -309,18 +311,21 @@ img {
 /****** Media queries ***********/
 
 @media (min-width: 1024px) {
-    .process__step ul {
+    .process__step {
         display: flex;
-        padding-left: 0px;
-        padding-right: 10%;
+        justify-content: space-between;
+        padding: 0px;
+        padding-right: 12%;
+         
     }
 
     .btn-step {
         padding-right: 0px;
+        width: 30%;
     }
 
     li {
-        width: 100%;
+        width: 70%;
     }
 
     .restaurants-card {
