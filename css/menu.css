@@ -31,12 +31,15 @@ img {
     padding: 30px 30px 20px 20px;
 }
 
-.heart {top: -20px;
+/* ************ HEART **************/
+
+.heart {
+    top: -20px;
 }
 
 .heart-full {
     opacity: 0;
-    transition-duration: 500ms;
+    transition-duration: 1500ms;
 }
 
 .heart-full:hover {
@@ -133,20 +136,34 @@ h4 {
     margin: 0px;
 }
 
-/************** Checkbox ***************/
+/***************** apparition checkbox *********************/
 
-.card_menu {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-}
 .checkbox {
+    width: 0%;
     border-radius: 0 15px 15px 0;
     transition-duration: 500ms;
-    width: 0%;
     background-color: #99e2d0;
     overflow: hidden;
 }
+
+.card_menu:hover .checkbox {
+    width: 80px;
+}
+
+.card_menu:hover .fa-circle-check {
+    transform: rotate(-360deg);
+}
+
+.fa-circle-check {
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/***************** Rognage du texte qui dépasse ****************/
 
 .card-content {
     padding: 15px;
@@ -156,24 +173,11 @@ h4 {
     flex-grow: 1;
 }
 
-.card_menu:hover .checkbox {
-    width: 80px;
-}
-
-.card_menu:hover .fa-circle-check {
-    transform: rotate(0deg);
-}
-
-.fa-circle-check {
-    transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;
-    color: white;
+.card_menu {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    overflow: hidden;
 }
-
-/***************** Rognage du texte qui dépasse ****************/
 
 .description-choix {
     margin: 0px;
@@ -211,6 +215,7 @@ h4 {
 }
 
 /****** Media queries ***********/
+
 @media (min-width: 600px) {
     img {
         height: 400px;

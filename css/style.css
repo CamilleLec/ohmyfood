@@ -19,7 +19,6 @@ img {
     object-fit: cover;
 }
 
-
 .fa-solid.fa-mobile-screen-button {
     margin-right: 15px;
     color: #7e7e7e;
@@ -131,7 +130,9 @@ img {
     justify-content: center;
 }
 
-.process__step{padding-left: 7%;}
+.process__step {
+    padding-left: 7%;
+}
 
 /************** RESTAURANTS ****************/
 
@@ -172,7 +173,7 @@ img {
 
 .card-title {
     margin: 0px;
-    padding-bottom: 5px ;
+    padding-bottom: 5px;
 }
 
 .card-subtitle {
@@ -201,7 +202,7 @@ img {
 
 .heart-full {
     opacity: 0;
-    transition-duration: 500ms;
+    transition-duration: 1500ms;
 }
 
 .heart-full:hover {
@@ -316,16 +317,11 @@ img {
         justify-content: space-between;
         padding: 0px;
         padding-right: 12%;
-         
     }
 
     .btn-step {
         padding-right: 0px;
         width: 30%;
-    }
-
-    li {
-        width: 70%;
     }
 
     .restaurants-card {
@@ -353,6 +349,7 @@ img {
     .section__title {
         margin-left: 0px;
     }
+
     .process {
         padding-left: 12%;
     }
@@ -368,6 +365,7 @@ img {
     .liste {
         display: flex;
     }
+
     .footer li {
         width: 190px;
     }
